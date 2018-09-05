@@ -9,13 +9,10 @@
 import UIKit
 
 class RoundedShadowButton: UIButton {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func awakeFromNib() {
+        self.layer.shadowColor = UIColor.darkGray.cgColor
+        self.layer.shadowRadius = 15
+        self.layer.shadowOpacity = 0.75
+        self.layer.cornerRadius = self.layer.frame.height / 2
     }
-    */
-
 }
