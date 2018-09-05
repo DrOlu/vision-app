@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+enum FlashState {
+    case off
+    case on
+}
