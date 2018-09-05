@@ -12,6 +12,11 @@
 		7633F23D213EA0CB003554AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7633F23B213EA0CB003554AC /* Main.storyboard */; };
 		7633F23F213EA0CC003554AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7633F23E213EA0CC003554AC /* Assets.xcassets */; };
 		7633F242213EA0CC003554AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7633F240213EA0CC003554AC /* LaunchScreen.storyboard */; };
+		7633F24D213EA6AC003554AC /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7633F24C213EA6AC003554AC /* RoundedShadowView.swift */; };
+		7633F24F213EA7FB003554AC /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7633F24E213EA7FB003554AC /* RoundedShadowButton.swift */; };
+		7633F251213EA82A003554AC /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7633F250213EA82A003554AC /* RoundedShadowImageView.swift */; };
+		7633F253213FA9FE003554AC /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7633F252213FA9FE003554AC /* SqueezeNet.mlmodel */; };
+		7633F256213FBE31003554AC /* FlashState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7633F255213FBE31003554AC /* FlashState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		7633F23E213EA0CC003554AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7633F241213EA0CC003554AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7633F243213EA0CC003554AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7633F24C213EA6AC003554AC /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		7633F24E213EA7FB003554AC /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		7633F250213EA82A003554AC /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
+		7633F252213FA9FE003554AC /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		7633F255213FBE31003554AC /* FlashState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 		7633F236213EA0CA003554AC /* vision-app-dev */ = {
 			isa = PBXGroup;
 			children = (
+				7633F254213FBE19003554AC /* Helpers */,
 				7633F24B213EA10B003554AC /* Resources */,
 				7633F24A213EA0FB003554AC /* View */,
 				7633F249213EA0F1003554AC /* Controller */,
@@ -77,6 +88,9 @@
 		7633F24A213EA0FB003554AC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7633F24C213EA6AC003554AC /* RoundedShadowView.swift */,
+				7633F24E213EA7FB003554AC /* RoundedShadowButton.swift */,
+				7633F250213EA82A003554AC /* RoundedShadowImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -84,8 +98,17 @@
 		7633F24B213EA10B003554AC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7633F252213FA9FE003554AC /* SqueezeNet.mlmodel */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		7633F254213FBE19003554AC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7633F255213FBE31003554AC /* FlashState.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7633F256213FBE31003554AC /* FlashState.swift in Sources */,
 				7633F23A213EA0CB003554AC /* CameraVC.swift in Sources */,
+				7633F253213FA9FE003554AC /* SqueezeNet.mlmodel in Sources */,
 				7633F238213EA0CB003554AC /* AppDelegate.swift in Sources */,
+				7633F24D213EA6AC003554AC /* RoundedShadowView.swift in Sources */,
+				7633F24F213EA7FB003554AC /* RoundedShadowButton.swift in Sources */,
+				7633F251213EA82A003554AC /* RoundedShadowImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
